@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* обнулення відступів */
+
+:root {
+  --main-color: #2196f3;
+  --background-color: #ffffff;
+  --text-color: #212121;
+  --subtext: #757575;
+}
+/* коренева інтеграція кольорів. СSS змінна */
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-color);
+}
+
+.head {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.work-space {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* відступи по бокам, де ми визначаєм максимвальний об'єм контейнера */
+.nav {
+  display: flex;
+  /* flex-direction: row; */
+  list-style: none;
+}
+
+.a-nostyle {
+  text-decoration: none;
+  color: var(--text-color);
+}
+/* шоб не робити глобально звернення до а, ми всюди задаємо клас */
+.padding {
+  padding: 0 90px 0 0;
+}
+
+.logo-style {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text-color);
+  letter-spacing: 0.03em;
+}
+
+.main-color {
+  color: var(--main-color);
+}
+/* колір 1 половини логотипу */
+.nav-item {
+  display: block; /* заповнення цілого контейнера по краяям. Стосується кнопки */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.875;
+  margin: 0 50px 0 0;
+  letter-spacing: 0.02em;
+}
+.real-address {
+  margin: 0 50px 0 0;
+}
+.address-style {
+  color: var(--subtext);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 0.875;
+  letter-spacing: 0.02em;
+}
+/* а не присвоює значення глобального стилю, необхіжно задавати окремно */
+
+.a-nostyle:hover,
+.a-nostyle:focus {
+  color: var(--main-color);
+}
+/* ховер і фокус для меню шапки */
+.address-style:hover,
+.address-style:focus {
+  color: var(--main-color);
+}
+/* ховер і фокус для адрес шапки */
+.slider {
+  background-color: #2f303a;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column; /* контент стовбцем */
+  /* два елементи працюють в парі, щоб не звертатись до дочірніх елементів */
+  justify-content: center;
+  align-items: center;
+  /* два елементи працюють в парі, щоб не звертатись до дочірніх елементів */
+}
+.slider-sentences {
+  font-size: 44px;
+  color: var(--background-color);
+  font-weight: 900;
+  line-height: 1.36;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.06em;
+}
+.button-style {
+  font-family: inherit; /* примусова наслідування шрифтів, навіть якщо елемент не може наслідувати з body*/
+  width: 200px;
+  height: 50px;
+  background-color: var(--main-color);
+  border: none; /* візуальне обгортання елемента лінією (наприклад кнопка без рамок) */
+  border-radius: 5px;
+  color: var(--background-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  cursor: pointer; /* курсор при наведенні стає рукою */
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* тінь кнопки */
+}
+.margin-section {
+  margin: 0 0 94px 0; /* відступ секцій */
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row; /* стиль для блоку стрічкогово типу */
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column; /* стиль для блоку колонкового типу */
+  justify-content: center;
+  align-items: center;
+}
+.our-feature {
+  /* відступ секцій */
+  position: absolute; /* не займає місце, і не штовхає інші елементи, якоби поверх інших */
+  white-space: nowrap; /* керує обробкою пробілів символа. записує все в 1 стічку до безкінечночті */
+  width: 1px;
+  height: 1px;
+  overflow: hidden; /* заховання вертикального і горизонтального скролу */
+  border: 0; /* знімає лінії які візуально обгортають елемент */
+  padding: 0;
+  /* працюэ тыльки з position: absolute; */
+  clip: rect(
+    0 0 0 0
+  ); /* обрізає контент в середині елемента, зажаються параметри розташування */
+  clip-path: inset(50%); /* доповнення до кіпа */
+  margin: -1px; /* треба буде стерти */
+}
+.feature-block {
+  margin: 10px 30px 0 0;
+  width: 270px;
+}
+.feature-text {
+  margin: 10px 0 0 0;
+  color: var(--subtext);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.feature-head {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase; /* Всі букви великі */
+  letter-spacing: 0.03em;
+}
+.style-do {
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  margin: 0 0 50px 0;
+  letter-spacing: 0.03em;
+}
+.img-style {
+  margin: 0 30px 0 0;
+}
+.our-team {
+  background-color: #f5f4fa;
+  padding: 94px 0 94px 0;
+}
+.teammates {
+  background-color: var(--background-color);
+  width: 270px;
+  height: 368px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px 0 0;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.name-surname {
+  margin: 30px 0 10px 0;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.125;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+.career {
+  color: var(--subtext);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.125;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.03em;
+}
+.footer {
+  height: 252px;
+  background-color: #2f303a;
+  padding: 60px 0 0 0;
+}
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--background-color);
+  letter-spacing: 0.03em;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-address {
+  text-decoration: none;
+  color: var(--background-color);
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+.address-margin {
+  margin: 20px 0 9px 0;
+}
+.footer-item {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+}
+.footer-margin {
+  margin: 20px 0 9px 0;
+  letter-spacing: 0.03em;
+}
+
+.active {
+  color: var(--main-color);
+}
+
+/*                  тут стили порфтолио            */
+.portfolio-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 90px 0 50px 0;
+}
+.none-style {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.nav-button-active {
+  color: white;
+  padding: 6px 22px;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.nav-button {
+  padding: 6px 22px;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+}
+.actived {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.block-project {
+  width: 370px;
+  height: 404px;
+  margin: 0 30px 30px 0;
+}
+.block-project .subhead {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+.block-project .subtext {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--subtext);
+}
+.nav-button:hover,
+.nav-button:focus {
+  color: white;
+  background: var(--main-color);
+  border-radius: 4px;
+}
+.nav-list {
+  margin: 4px;
+}
