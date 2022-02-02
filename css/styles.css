@@ -13,6 +13,7 @@
   --subtext-color: #757575;
   --second-color: #2f303a;
   --logo-color: #ffffff;
+  --background-color-second: #f5f4fa;
 }
 /* коренева інтеграція кольорів. СSS змінна */
 body {
@@ -168,4 +169,41 @@ body {
   padding-bottom: 20px;
 }
 .fetures__unit__list__item__text {
+}
+/* блок. чем мы занимаемся */
+.what-we-do {
+  height: 390px;
+  /* padding-top: 100px; */
+}
+.what-we-do__text {
+}
+.what-we-do_unit-list {
+  display: flex;
+  justify-content: space-between;
+}
+.what-we-do_unit-list-item {
+  list-style: none;
+}
+.img-style {
+}
+/* блок. наша команда */
+.our-team {
+  height: 650px;
+  background-color: var(--background-color-second);
+  align-items: center;
+  padding-top: 135px;
+}
+.our-team__text {
+  padding: 0px 450px 0px 450px;
+}
+.our-team__unit-list {
+  display: flex;
+  justify-content: space-between;
+}
+.our-team__teammate {
+  list-style: none;
+}
+.name-surname {
+}
+.career {
 }
