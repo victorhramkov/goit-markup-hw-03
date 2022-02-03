@@ -234,6 +234,10 @@ align-items: center;
 }
 .career {
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3527c07cb9d4f1f2edce894fc89119c09208c2f2
 /* Начало стилей портфолио */
 .section {
 }
@@ -251,12 +255,17 @@ align-items: center;
 }
 .our-projects_unit-list {
   display: flex;
+<<<<<<< HEAD
   flex-wrap: wrap;
   list-style: none;
   margin: 34px 0 0 0;
 }
 .our-projects__unit-list__list-item {
   
+=======
+}
+.our-projects__unit-list__list-item {
+>>>>>>> 3527c07cb9d4f1f2edce894fc89119c09208c2f2
 }
 .item-project {
 }
@@ -268,3 +277,8 @@ align-items: center;
 }
 .subtext {
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> adf80243c81d19b95ff9982584965d484737b3e7
+>>>>>>> 3527c07cb9d4f1f2edce894fc89119c09208c2f2
