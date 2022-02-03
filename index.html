@@ -12,23 +12,25 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Figma Test</title>
+    <title>web studio v2.1</title>
   </head>
-  <body>
+  <body>   
     <!-- голова сайта -->
-    <header class="header container">
-      <a class="header__logo" href="#"
-        ><span class="header__logo__web">Web</span>Studio</a
-      >
+    <header class="header">
+      <div class="container">
+      <a class="header__logo" href="./index.html"><span class="header__logo__web">Web</span>Studio</a>
+      <nav class="head-block">
       <ul class="header__top__menu">
         <li class="header__top__menu__pages">Студия</li>
         <li class="header__top__menu__pages">Портфолио</li>
         <li class="header__top__menu__pages">Контакты</li>
       </ul>
+    </nav>
       <ul class="header__contacts">
         <li class="header__contacts__list">info@devstudio.com</li>
         <li class="header__contacts__list">+38 096 111 11 11</li>
       </ul>
+    </div>
     </header>
     <!-- основная часть сайта -->
     <main></main>
@@ -110,7 +112,8 @@
       </ul>
     </section>
     <!-- секция наша команда -->
-    <section class="our-team container">
+    <section class="our-team">
+      <div class="container">
       <h2 class="our-team__text">Наша команда</h2>
       <ul class="our-team__unit-list">
         <li class="our-team__teammate"><img
@@ -147,11 +150,12 @@
               <h3 class="name-surname">Михаил Ермаков</h3>
               <p class="career">UI Designer</p></li>
       </ul>
+    </div>
     </section>
     <!-- подвал сайта -->
     <footer class="footer">
       <div class="container">
-        <div>
+        
           <a href="#" class="footer__logo"
             ><span class="footer__logo__web">Web</span>Studio
           </a>
@@ -180,7 +184,7 @@
               </li>
             </ul>
           </adress>
-        </div>
+        
         <!-- <div class="social">
           <p class="social__add__on">присоединяйтесь</p>
           <ul class="subscribe__social">
