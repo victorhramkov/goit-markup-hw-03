@@ -12,6 +12,7 @@
   --black-text-color: #2f303a;
   --subtext-color: #757575;
   --second-color: #2f303a;
+  --black-color2:#212121;
   --logo-color: #ffffff;
   --background-color-second: #f5f4fa;
 }
@@ -32,7 +33,6 @@ body {
 }
 .header {
   border-bottom: 1px solid #ececec;
-  padding: 25px 0;
 }
 .header > .container {
 display: flex;
@@ -105,7 +105,7 @@ align-items: center;
 }
 .header__contacts__list {
   padding-left: 35px;
-  color: var(--subtext);
+  color: var(--subtext-color);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -223,12 +223,23 @@ align-items: center;
 .fetures__unit__list__item:first-child {
   padding: 0;
 }
+.fetures__unit__list__item__headline{
+  padding-bottom: 5px;
+  font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--black-color2);
+}
 .fetures__unit__list__item__text {
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
 }
 /* блок. чем мы занимаемся */
 .what-we-do {
-  height: 390px;
-  /* padding-top: 100px; */
+  padding-top: 0
 }
 .what-we-do__text {
   text-align: center;
@@ -250,10 +261,8 @@ letter-spacing: 0.03em;
 }
 /* блок. наша команда */
 .our-team {
-  height: 650px;
   background-color: var(--background-color-second);
   align-items: center;
-  padding-top: 135px;
 }
 .our-team__text {
   text-align: center;
@@ -269,10 +278,32 @@ letter-spacing: 0.03em;
 }
 .our-team__teammate {
   list-style: none;
+  background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+height: 370px;
+}
+.team-mate-profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
 }
 .name-surname {
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--black-color2);
+padding-bottom: 10px;
 }
 .career {
+  font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--subtext-color);
 }
 /* Начало стилей портфолио */
 .portfolio-nav__unit-list {
