@@ -214,13 +214,13 @@ align-items: center;
   display: flex;
   justify-content: space-between;
   list-style: none;
-  height: 300px;
   align-items: center;
 }
 .fetures__unit__list__item {
   padding-left: 15px;
+  width: 270px;
 }
-li.fetures__unit__list__item:first-child {
+.fetures__unit__list__item:first-child {
   padding: 0;
 }
 .fetures__unit__list__item__text {
