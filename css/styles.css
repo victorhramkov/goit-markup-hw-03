@@ -12,7 +12,7 @@
   --black-text-color: #2f303a;
   --subtext-color: #757575;
   --second-color: #2f303a;
-  --black-color2:#212121;
+  --black-color2: #212121;
   --logo-color: #ffffff;
   --background-color-second: #f5f4fa;
 }
@@ -27,7 +27,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -35,13 +35,13 @@ body {
   border-bottom: 1px solid #ececec;
 }
 .header > .container {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .head-block {
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 .header__top__menu__pages:hover,
 .header__top__menu__pages:focus {
@@ -54,7 +54,7 @@ align-items: center;
   cursor: pointer;
 }
 .nav-button:hover,
-.nav-button:focus{
+.nav-button:focus {
   background-color: var(--button-and-logo-color);
   color: var(--background-color);
   cursor: pointer;
@@ -92,9 +92,9 @@ align-items: center;
   line-height: 0.875;
   letter-spacing: 0.02em;
 }
-.header__top__menu__pages__active{
+.header__top__menu__pages__active {
   text-decoration: none;
-    color: inherit;
+  color: inherit;
 }
 .header__contacts {
   display: flex;
@@ -223,32 +223,31 @@ align-items: center;
 .fetures__unit__list__item:first-child {
   padding: 0;
 }
-.fetures__unit__list__item__headline{
+.fetures__unit__list__item__headline {
   padding-bottom: 5px;
   font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--black-color2);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-color2);
 }
 .fetures__unit__list__item__text {
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
 /* блок. чем мы занимаемся */
 .what-we-do {
-  padding-top: 0
+  padding-top: 0;
 }
 .what-we-do__text {
   text-align: center;
   padding-bottom: 30px;
   font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-letter-spacing: 0.03em;
-
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
 }
 .what-we-do_unit-list {
   display: flex;
@@ -268,9 +267,9 @@ letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 30px;
   font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-letter-spacing: 0.03em;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
 }
 .our-team__unit-list {
   display: flex;
@@ -278,32 +277,33 @@ letter-spacing: 0.03em;
 }
 .our-team__teammate {
   list-style: none;
-  background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-height: 370px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  height: 370px;
 }
-.team-mate-profile{
+.team-mate-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
 }
 .name-surname {
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--black-color2);
-padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-color2);
+  padding-bottom: 10px;
 }
 .career {
   font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.03em;
-color:var(--subtext-color);
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--subtext-color);
 }
 /* Начало стилей портфолио */
 .portfolio-nav__unit-list {
@@ -350,7 +350,7 @@ color:var(--subtext-color);
 .our-projects__unit-list__list-item {
   padding: 0px 30px 30px 0px;
 }
-.our-projects__unit-list__list-item:nth-child(3n+3) {
+.our-projects__unit-list__list-item:nth-child(3n + 3) {
   padding-right: 0;
 }
 .item-project {
@@ -360,10 +360,10 @@ color:var(--subtext-color);
 }
 .container-items {
   color: var(--black-text-color);
-  background: #FFFFFF;
-  border-bottom:1px solid #EEEEEE;
-  border-left:1px solid #EEEEEE;
-  border-right:1px solid #EEEEEE;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .subhead {
 }
