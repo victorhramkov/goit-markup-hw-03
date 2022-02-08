@@ -33,10 +33,11 @@ body {
 }
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .header > .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .head-block {
@@ -63,6 +64,7 @@ body {
   color: var(--button-and-logo-color);
 }
 .header__logo {
+  margin-right: 93px;
   color: var(--black-text-color);
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -85,7 +87,6 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  padding: 30px;
   display: block; /* заповнення цілого контейнера по краяям. Стосується кнопки */
   font-weight: 500;
   font-size: 16px;
@@ -96,15 +97,17 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.header__top__menu__pages:not(:last-child) {
+  margin-right: 93px;
+}
 .header__contacts {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
   list-style: none;
-  padding: 25px;
+  margin: 0 auto;
 }
 .header__contacts__list {
-  padding-left: 35px;
   color: var(--subtext-color);
   text-decoration: none;
   font-size: 14px;
@@ -112,12 +115,14 @@ body {
   line-height: 0.875;
   letter-spacing: 0.02em;
 }
+.header__contacts__list:not(:last-child) {
+  margin-right: 50px;
+}
 /* подвал сайта */
 .footer {
-  display: flex;
-  height: 252px;
   background-color: var(--second-color);
-  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /* блок с адресами */
 .footer__logo {
@@ -128,6 +133,7 @@ body {
   line-height: 1.15;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 .footer__logo__web {
   color: var(--button-and-logo-color);
@@ -141,7 +147,9 @@ body {
 }
 .footer__adress__unit__list {
   list-style: none;
-  padding-bottom: 10px;
+}
+.footer__adress__unit__list:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer__adress__unit__list__street {
 }
@@ -172,20 +180,17 @@ body {
   color: #ffffff;
   padding-left: 20px;
 } */
+
 /* блок з банером */
 .baner {
-  height: 570px;
   background-color: var(--second-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .slider__sentences {
-  display: flex;
-  justify-content: center;
   color: var(--white-text-color);
-  padding-top: 200px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -217,11 +222,10 @@ body {
   align-items: center;
 }
 .fetures__unit__list__item {
-  padding-left: 15px;
   width: 270px;
 }
-.fetures__unit__list__item:first-child {
-  padding: 0;
+.fetures__unit__list__item:not(:last-child) {
+  margin-right: 30px;
 }
 .fetures__unit__list__item__headline {
   padding-bottom: 5px;
@@ -244,6 +248,7 @@ body {
 .what-we-do__text {
   text-align: center;
   padding-bottom: 30px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -266,6 +271,7 @@ body {
 .our-team__text {
   text-align: center;
   padding-bottom: 30px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -281,13 +287,14 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  height: 370px;
+  /* height: 370px; */
 }
 .team-mate-profile {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   align-items: center;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .name-surname {
   font-weight: 500;
@@ -296,7 +303,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-color2);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .career {
   font-size: 16px;
@@ -311,7 +318,7 @@ body {
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* кнопки портфоліо */
