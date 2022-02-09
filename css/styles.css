@@ -355,10 +355,10 @@ body {
   list-style: none;
 }
 .our-projects__unit-list__list-item {
-  padding: 0px 30px 30px 0px;
+  margin: 0px 30px 30px 0px;
 }
 .our-projects__unit-list__list-item:nth-child(3n + 3) {
-  padding-right: 0;
+  margin-right: 0;
 }
 .item-project {
   text-decoration: none;
